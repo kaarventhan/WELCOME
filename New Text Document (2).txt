@@ -1,0 +1,20 @@
+text = input()
+length = len(text)
+mid = length // 2
+print(mid)
+end = 0
+for i in range(0,length):
+    space = length - i
+    outlen = 1
+    tempmid = mid
+    for j in range(0,space):
+        print("",end = " ")
+    if(end == 0):
+        while(outlen > 0):
+            print(text[tempmid])
+            outlen -= 1
+            tempmid +=1
+        if(mid != length-1):
+            mid +=1
+        else:
+            mid = 0
